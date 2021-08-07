@@ -4,7 +4,7 @@ public class doMultipleCheckByInput {
 
 	// function to checkPalindrome
 	public void checkPalindrome(Scanner sc) {
-		int i = 0;		
+		int i = 0;
 		String choiceStr;
 		System.out.println("Enter your choice to Find palindrome of number \n");
 		Integer subChoice = sc.nextInt();
@@ -43,7 +43,7 @@ public class doMultipleCheckByInput {
 	}
 
 	// function to check no is prime or not
-	public void checkPrimeNumber(Scanner sc) {
+	public void checkPrimeNumber(Scanner sc) {	
 		System.out.println("Enter your choice to to check prime number \n");
 		Integer subChoice = sc.nextInt();
 		if (subChoice <= 1) {
@@ -61,21 +61,23 @@ public class doMultipleCheckByInput {
 		} else {
 			System.out.println(subChoice + " is an invalid input \n");
 		}
-	}
+		}
+	
+			
 
 	// function to print Fibonacci Series
 	public void printFibonacciSeries(Scanner sc) {
 		// initialize the first and second value as 0,1 respectively.
-		int first = 0, second = 1; 
-		int secNextVal=second;
+		int first = 0, second = 1;
+		int secNextVal = second;
 		System.out.println("Enter your choice to to check preceding numbers in fabonacci Series \n");
 		Integer subChoice = sc.nextInt();
 		System.out.print(first);
-		for (int i = first; first+second<= subChoice; i++) {
-			secNextVal=first+second;
+		for (int i = first; first + second <= subChoice; i++) {
+			secNextVal = first + second;
 			System.out.print(" " + secNextVal);
-			first=second;
-			second=secNextVal;						
+			first = second;
+			second = secNextVal;
 		}
 	}
 
