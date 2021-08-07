@@ -62,7 +62,6 @@ public class doMultipleCheckByInput {
 			System.out.println(subChoice + " is an invalid input \n");
 		}
 		}
-	
 			
 
 	// function to print Fibonacci Series
